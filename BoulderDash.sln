@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoulderDash", "BoulderDash\BoulderDash.csproj", "{3D299DE1-1A85-4EC9-BB63-44B6BA4CA94D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D299DE1-1A85-4EC9-BB63-44B6BA4CA94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D299DE1-1A85-4EC9-BB63-44B6BA4CA94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D299DE1-1A85-4EC9-BB63-44B6BA4CA94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D299DE1-1A85-4EC9-BB63-44B6BA4CA94D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2714BBEE-45B7-4867-9253-FA6AED8E4C0C}
+	EndGlobalSection
+EndGlobal
