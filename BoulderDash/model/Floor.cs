@@ -9,7 +9,7 @@ namespace BoulderDash.model
 {
     public class Floor:Tile
     {
-        private GameModel _gameModel;
+        protected GameModel _gameModel;
 
         public GameModel GameModel
         {
@@ -17,7 +17,7 @@ namespace BoulderDash.model
         }
 
         private GameObject _gameObject;
-        public GameObject GameObject { get { return _gameObject; } set { _gameObject = value; } }
+        public virtual GameObject GameObject { get { return _gameObject; } set { _gameObject = value; } }
 
         public Floor()
         {
@@ -69,24 +69,24 @@ namespace BoulderDash.model
 
         public override void CheckSurroundings()
         {
-            //NeighbourTile(Direction.DOWN).NeighbourTile(Direction.DOWN).NeighbourTile(Direction.LEFT).GetGameObject()?.CheckSurroundings();
-            //NeighbourTile(Direction.DOWN).NeighbourTile(Direction.DOWN).NeighbourTile(Direction.RIGHT).GetGameObject()?.CheckSurroundings();
-            //NeighbourTile(Direction.DOWN).NeighbourTile(Direction.DOWN).GetGameObject()?.CheckSurroundings();
+            NeighbourTile(Direction.DOWN).NeighbourTile(Direction.DOWN).NeighbourTile(Direction.LEFT).GetGameObject()?.CheckSurroundings();
+            NeighbourTile(Direction.DOWN).NeighbourTile(Direction.DOWN).NeighbourTile(Direction.RIGHT).GetGameObject()?.CheckSurroundings();
+            NeighbourTile(Direction.DOWN).NeighbourTile(Direction.DOWN).GetGameObject()?.CheckSurroundings();
 
             NeighbourTile(Direction.DOWN).NeighbourTile(Direction.LEFT).GetGameObject()?.CheckSurroundings();
             NeighbourTile(Direction.DOWN).NeighbourTile(Direction.RIGHT).GetGameObject()?.CheckSurroundings();
             NeighbourTile(Direction.DOWN).GetGameObject()?.CheckSurroundings();
 
-            //NeighbourTile(Direction.UP).NeighbourTile(Direction.UP).NeighbourTile(Direction.LEFT).GetGameObject()?.CheckSurroundings();
-            //NeighbourTile(Direction.UP).NeighbourTile(Direction.UP).NeighbourTile(Direction.RIGHT).GetGameObject()?.CheckSurroundings();
-            //NeighbourTile(Direction.UP).NeighbourTile(Direction.UP).GetGameObject()?.CheckSurroundings();
+            NeighbourTile(Direction.UP).NeighbourTile(Direction.UP).NeighbourTile(Direction.LEFT).GetGameObject()?.CheckSurroundings();
+            NeighbourTile(Direction.UP).NeighbourTile(Direction.UP).NeighbourTile(Direction.RIGHT).GetGameObject()?.CheckSurroundings();
+            NeighbourTile(Direction.UP).NeighbourTile(Direction.UP).GetGameObject()?.CheckSurroundings();
 
             NeighbourTile(Direction.UP).NeighbourTile(Direction.LEFT).GetGameObject()?.CheckSurroundings();
             NeighbourTile(Direction.UP).NeighbourTile(Direction.RIGHT).GetGameObject()?.CheckSurroundings();
             NeighbourTile(Direction.UP).GetGameObject()?.CheckSurroundings();
 
-            //NeighbourTile(Direction.LEFT).NeighbourTile(Direction.LEFT).GetGameObject()?.CheckSurroundings();
-            //NeighbourTile(Direction.RIGHT).NeighbourTile(Direction.RIGHT).GetGameObject()?.CheckSurroundings();
+            NeighbourTile(Direction.LEFT).NeighbourTile(Direction.LEFT).GetGameObject()?.CheckSurroundings();
+            NeighbourTile(Direction.RIGHT).NeighbourTile(Direction.RIGHT).GetGameObject()?.CheckSurroundings();
 
             NeighbourTile(Direction.LEFT).GetGameObject()?.CheckSurroundings();
            NeighbourTile(Direction.RIGHT).GetGameObject()?.CheckSurroundings();

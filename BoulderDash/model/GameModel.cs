@@ -28,25 +28,6 @@ namespace BoulderDash.model
             _fireFlys = new List<FireFly>();
         }
 
-        public void Start()
-        {
-            _controller.ShowStartMenu();
-        }
-
-        public void ChestPlacedOnDestination()
-        {
-            _chestOnDestinations++;
-            if (_chestOnDestinations >= _destinations)
-            {
-                _controller.EindGame(Player.Score);
-            }
-        }
-
-        public void ChestRemovedFromDestination()
-        {
-            _chestOnDestinations--;
-        }
-
         public void MovePlayer(Direction direction)
         {
             Player.Move(direction);

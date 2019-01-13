@@ -1,140 +1,140 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="BoulderDash.controller.GameController" Collapsed="true">
-    <Position X="12.5" Y="10.75" Width="1.5" />
+  <Class Name="BoulderDash.controller.GameController">
+    <Position X="5.25" Y="12.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAACAAIBABACCAACAAAAAAAAAAAAAAAAABAYA=</HashCode>
       <FileName>controller\GameController.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.helper.BoardHelper" Collapsed="true">
-    <Position X="10.75" Y="10.75" Width="1.5" />
+  <Class Name="BoulderDash.helper.BoardHelper">
+    <Position X="17" Y="13.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACBAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAEAIA=</HashCode>
       <FileName>helper\BoardHelper.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LevelData" Collapsed="true">
-    <Position X="12.5" Y="11.75" Width="1.5" />
+  <Class Name="LevelData">
+    <Position X="19.25" Y="13.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAABAAAAAAABAAEAAAAAAAA=</HashCode>
       <FileName>helper\LevelData.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.model.Boulder" Collapsed="true">
-    <Position X="17" Y="8" Width="1.5" />
+  <Class Name="BoulderDash.model.Boulder">
+    <Position X="7.75" Y="9.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAIAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>model\Boulder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.model.Diamond" Collapsed="true">
-    <Position X="1.25" Y="8" Width="1.5" />
+  <Class Name="BoulderDash.model.Diamond">
+    <Position X="7.75" Y="7.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAIAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>model\Diamond.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.model.Exit" Collapsed="true">
-    <Position X="4" Y="12.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>model\Exit.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="BoulderDash.model.FireFly" Collapsed="true">
-    <Position X="8" Y="8" Width="1.5" />
+  <Class Name="BoulderDash.model.FireFly">
+    <Position X="11" Y="7.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAIAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>model\FireFly.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.model.Floor" Collapsed="true">
-    <Position X="4" Y="11.25" Width="1.5" />
+  <Class Name="BoulderDash.model.Floor">
+    <Position X="2.75" Y="7.75" Width="2" />
     <TypeIdentifier>
       <HashCode>ABAAAEAAABIAAAAAAAAAAAgACAAAAAAAAggAAAIAACQ=</HashCode>
       <FileName>model\Floor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.model.GameModel" Collapsed="true">
-    <Position X="14.25" Y="10.75" Width="1.5" />
+  <Class Name="BoulderDash.model.GameModel">
+    <Position X="21" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAEAgAAKQAIBAAAABAAAAAAQAAIAAAgAAAAUAUBBA=</HashCode>
+      <HashCode>AAQAEAgAAIAAIBAAAABAAAAAAAAAIAAAgAAAAUAQBBA=</HashCode>
       <FileName>model\GameModel.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.model.GameObject" Collapsed="true">
-    <Position X="9" Y="6.75" Width="1.5" />
+  <Class Name="BoulderDash.model.GameObject">
+    <Position X="12.5" Y="3.25" Width="3" />
     <TypeIdentifier>
       <HashCode>ABAAAAAQAIAAAEAAAAAAAAwAAABIAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>model\GameObject.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.model.HardenedMud" Collapsed="true">
-    <Position X="3.5" Y="8" Width="1.5" />
+  <Class Name="BoulderDash.model.HardenedMud">
+    <Position X="11" Y="9.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAIAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>ABAAAAAAAIAAAAAAAEAAAAgAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>model\HardenedMud.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.model.Mud" Collapsed="true">
-    <Position X="10.25" Y="8" Width="1.5" />
+  <Class Name="BoulderDash.model.Mud">
+    <Position X="17.5" Y="7.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAIAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>model\Mud.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.model.Player" Collapsed="true">
-    <Position X="14.75" Y="8" Width="1.5" />
+  <Class Name="BoulderDash.model.Player">
+    <Position X="14.25" Y="9.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAIAAAAgAAAAAAAgAAABAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>model\Player.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.model.SteelWall" Collapsed="true">
-    <Position X="6.25" Y="11.25" Width="1.5" />
+  <Class Name="BoulderDash.model.SteelWall">
+    <Position X="0.75" Y="7.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>ABAAAEAAABIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>model\SteelWall.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.model.Tile" Collapsed="true">
-    <Position X="5.25" Y="10" Width="1.5" />
+  <Class Name="BoulderDash.model.Tile">
+    <Position X="3" Y="3.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>ABBAAEAAABIAAAAAAAAAAEgAAAAABABAAAgAAMAAAAQ=</HashCode>
       <FileName>model\Tile.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.model.TNT" Collapsed="true">
-    <Position X="5.75" Y="8" Width="1.5" />
+  <Class Name="BoulderDash.model.TNT">
+    <Position X="14.25" Y="7.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAIAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>model\TNT.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.model.Wall" Collapsed="true">
-    <Position X="12.5" Y="8" Width="1.5" />
+  <Class Name="BoulderDash.model.Wall">
+    <Position X="17.5" Y="9.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAIAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>model\Wall.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.Program" Collapsed="true">
-    <Position X="14.25" Y="11.75" Width="1.5" />
+  <Class Name="BoulderDash.Program">
+    <Position X="21" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BoulderDash.view.GameView" Collapsed="true">
-    <Position X="10.75" Y="11.75" Width="1.5" />
+  <Class Name="BoulderDash.view.GameView">
+    <Position X="2.25" Y="13" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AQACAAAAAAAAAAAAAAAAAAAAAIBAAAAAAAAAAEABAAA=</HashCode>
       <FileName>view\GameView.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="BoulderDash.enums.Direction" Collapsed="true">
-    <Position X="10.75" Y="13" Width="1.5" />
+  <Class Name="BoulderDash.model.Exit">
+    <Position X="5.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>model\Exit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="BoulderDash.enums.Direction">
+    <Position X="15.25" Y="13.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAICAAAgAAAAAAAAAAA=</HashCode>
       <FileName>enums\Direction.cs</FileName>

@@ -11,8 +11,8 @@ namespace BoulderDash
     {
         static void Main(string[] args)
         {
-            GameController sokoban = new GameController();
-            sokoban.Start();
+            GameController boulderDash = new GameController();
+            boulderDash.Start();
         }
     }
 }

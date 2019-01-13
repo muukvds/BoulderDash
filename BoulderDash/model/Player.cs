@@ -19,14 +19,13 @@ namespace BoulderDash.model
 
         public override void Destroy()
         {
-            //CurrentLocation.GameModel.EndGame();
+            CurrentLocation.GameModel.EndGame();
         }
 
         public override bool Move(Direction direction)
         {
             bool moved = false;
            
-            //todo fix cast
            var targetFloor = CurrentLocation.NeighbourTile(direction);
             if (CurrentLocation.NeighbourTile(direction).CanBeMovedOn())
             {
@@ -50,7 +49,7 @@ namespace BoulderDash.model
 
         public override void Action()
         {
-           
+            Destroy();
         }
 
         public override void CheckSurroundings()

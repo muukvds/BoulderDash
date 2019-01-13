@@ -23,7 +23,7 @@ namespace BoulderDash.controller
 
         public void Start()
         {
-            _Model.Start();
+            ShowStartMenu();
         }
 
         public void ShowStartMenu()
