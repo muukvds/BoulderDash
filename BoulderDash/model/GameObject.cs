@@ -15,10 +15,20 @@ namespace BoulderDash.model
 
         public bool CanSupportHardenedMud { get; protected set; }
 
+        public bool IsPlayer { get; protected set; }
+        public bool IsTNT { get; protected set; }
+        public bool Crushable { get; protected set; }
+
+
+
         public GameObject()
         {
+
+            Crushable = false;
             Movable = true;
             CanSupportHardenedMud = false;
+            IsPlayer = false;
+            IsTNT = false;
         }
 
         public virtual bool Move(Direction direction)
@@ -37,6 +47,8 @@ namespace BoulderDash.model
             CurrentLocation.GameObject = null;
             CurrentLocation.CheckSurroundings();
         }
+        public virtual void Crush()
+        { }
 
         protected void MoveTo(Tile target)
         {

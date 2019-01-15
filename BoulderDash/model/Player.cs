@@ -15,11 +15,17 @@ namespace BoulderDash.model
         public Player()
         {
             Score = 0;
+            IsPlayer = true;
+            Crushable = true;
         }
 
         public override void Destroy()
         {
             CurrentLocation.GameModel.EndGame();
+        }
+        public override void Crush()
+        {
+            Destroy();
         }
 
         public override bool Move(Direction direction)

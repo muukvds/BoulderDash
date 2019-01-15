@@ -11,8 +11,8 @@ namespace BoulderDash.model
     {
         public override void Action()
         {
-            //todo give points to player
-            throw new NotImplementedException();
+            CurrentLocation.GameModel.PickUpDiamond();
+            Destroy();
         }
 
         public override string GetIcon()
@@ -68,9 +68,18 @@ namespace BoulderDash.model
 
         public override bool Move(Direction direction)
         {
-            CurrentLocation.NeighbourTile(direction).Action();
-            CurrentLocation.NeighbourTile(direction).MoveGameObjectTo(this);
-            return true;
+
+            bool move = CurrentLocation.NeighbourTile(direction).GetGameObject() == null ||
+                   CurrentLocation.NeighbourTile(direction).GetGameObject().IsTNT;
+       
+            if (move)
+            {
+                CurrentLocation.NeighbourTile(direction).Crush();
+                CurrentLocation.NeighbourTile(direction).MoveGameObjectTo(this);
+            }
+
+            return move;
+
         }
 
         public Diamond()

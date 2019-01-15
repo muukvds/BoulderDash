@@ -10,16 +10,14 @@ namespace BoulderDash.model
    public class Boulder : GameObject
     {
 
+        public Boulder()
+        {
+            CanMoveOn = false;
+        }
+
         public override string GetIcon()
         {
             return "O";
-        }
-
-        public override bool Move(Direction direction)
-        {
-            CurrentLocation.NeighbourTile(direction).Action();
-            CurrentLocation.NeighbourTile(direction).MoveGameObjectTo(this);
-            return true;
         }
 
         public override void Action()
@@ -73,9 +71,23 @@ namespace BoulderDash.model
             }
         }
 
-        public Boulder()
+ 
+
+        public override bool Move(Direction direction)
         {
-            CanMoveOn = false;
+            bool isCrushable = true;
+            if (CurrentLocation.NeighbourTile(direction).GetGameObject() != null)
+            {
+                isCrushable=CurrentLocation.NeighbourTile(direction).GetGameObject().Crushable;
+            }
+
+            if (isCrushable)
+            {
+                CurrentLocation.NeighbourTile(direction).Crush();
+                CurrentLocation.NeighbourTile(direction).MoveGameObjectTo(this);
+            }
+
+            return true;
         }
     }
 }

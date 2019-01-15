@@ -23,11 +23,11 @@ namespace BoulderDash.helper
             _Controller = gameController;
             _levelData = new LevelData();
 
-
         }
 
         public Tile getBoard(int levelNumber)
         {
+           _Model.SetPlayTime(120);
 
             return generateTiles(_levelData.GetLevel(levelNumber));
         }
@@ -91,7 +91,9 @@ namespace BoulderDash.helper
                             break;
 
                         case 'E':
-                            newTile = new Exit();
+                            Exit e  = new Exit(_Model);
+                            _Model.AddExit(e);
+                            newTile = e;
                             break;
 
                         case 'H':

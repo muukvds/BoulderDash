@@ -73,8 +73,23 @@ namespace BoulderDash.model
 
         public override bool Move(Direction direction)
         {
-            CurrentLocation.NeighbourTile(direction).Action();
-            CurrentLocation.NeighbourTile(direction).MoveGameObjectTo(this);
+            if (_strength > 1)
+            {
+                _strength--;
+            }
+
+            bool isCrushable = true;
+            if (CurrentLocation.NeighbourTile(direction).GetGameObject() != null)
+            {
+                isCrushable = CurrentLocation.NeighbourTile(direction).GetGameObject().Crushable;
+            }
+
+            if (isCrushable)
+            {
+                CurrentLocation.NeighbourTile(direction).Crush();
+                CurrentLocation.NeighbourTile(direction).MoveGameObjectTo(this);
+            }
+  
             return true;
         }
     }

@@ -8,11 +8,15 @@ namespace BoulderDash.model
 {
     public class Exit : Floor
     {
-
+        private bool active;
         public override GameObject GameObject
         {
             set
             {
+                if (value.IsPlayer && active)
+                {
+                    GameModel.WinGame();
+                }
                 base.GameObject = value;
              
             }
@@ -22,9 +26,15 @@ namespace BoulderDash.model
             return "E";
         }
 
-        public Exit()
+        public void Open()
         {
-            
+            active = true;
+        }
+
+        public Exit(GameModel gameModel)
+        {
+            GameModel = gameModel;
+            active = false;
         }
     }
 }

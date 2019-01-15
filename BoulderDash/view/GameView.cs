@@ -23,19 +23,23 @@ namespace BoulderDash.view
             Console.Clear();
 
             Console.WriteLine("______________________________________________________");
-            Console.WriteLine("| Welkom bij sokoban                                 |");
+            Console.WriteLine("| Welkom bij BoulderDask                             |");
             Console.WriteLine("| betekenis van de symbolen   | doel van het spel    |");
             Console.WriteLine("|                             |                      |");
-            Console.WriteLine("| spatie : outerspace         | duw met de truck     |");
-            Console.WriteLine("|     █ : muur                | de krat(ten)         |");
-            Console.WriteLine("|     . : vloer               | de krat(ten)         |");
-            Console.WriteLine("|     O : krat                | de krat(ten)         |");
-            Console.WriteLine("|     0 : krat op bestemming  | de krat(ten)         |");
-            Console.WriteLine("|     X : bestemming          | de krat(ten)         |");
-            Console.WriteLine("|     @ : truck               | de krat(ten)         |");
+            Console.WriteLine("| spatie : outerspace         | haal alle diamanten  |");
+            Console.WriteLine("|     █ : steelWall           | op en ga naar de     |");
+            Console.WriteLine("|     . : vloer               | exit                 |");
+            Console.WriteLine("|     O : Boulder             |                      |");
+            Console.WriteLine("|     0 : Diamant             |                      |");
+            Console.WriteLine("|     X : TNT                 |                      |");
+            Console.WriteLine("|     @ : Rockford (player)   |                      |");
+            Console.WriteLine("|     M : Mud                 |                      |");
+            Console.WriteLine("|     H : Hardened Mud        |                      |");
+            Console.WriteLine("|     F : Firefly             |                      |");
+            Console.WriteLine("|     # : Wall                |                      |");
             Console.WriteLine("|____________________________________________________|");
             Console.WriteLine("");
-            Console.WriteLine("> Kies een doolhof (1 - 6), s = stop");
+            Console.WriteLine("> Kies een level (1 - 3), s = stop");
 
             string sInput = Console.ReadLine();
 
@@ -77,14 +81,14 @@ namespace BoulderDash.view
 
         public void LostGame()
         {
-            Console.WriteLine("Game verloren niet genoeg kratten.");
+            Console.WriteLine("Game verloren je bent dood.");
             Console.ReadLine();
             _controller.Quit();
         }
 
-        public void EindGame(int steps)
+        public void EindGame(int score,int timeLeft)
         {
-            Console.WriteLine("Game voltooid in " + steps + " stappen");
+            Console.WriteLine("Game voltooid je hebt een score van {0}, met {1} seconde over", score,timeLeft);
             Console.ReadLine();
             _controller.Quit();
         }
@@ -93,8 +97,8 @@ namespace BoulderDash.view
         private Direction WaitForInput()
         {
             Direction direction = Direction.UP;
-            bool arroKeyPressed = false;
-            while (!arroKeyPressed)
+            bool actionKey = false;
+            while (!actionKey)
             {
                 if (Console.KeyAvailable)
                 {
@@ -103,19 +107,23 @@ namespace BoulderDash.view
                     {
                         case ConsoleKey.UpArrow:
                             direction = Direction.UP;
-                            arroKeyPressed = true;
+                            actionKey = true;
                             break;
                         case ConsoleKey.DownArrow:
                             direction = Direction.DOWN;
-                            arroKeyPressed = true;
+                            actionKey = true;
                             break;
                         case ConsoleKey.LeftArrow:
                             direction = Direction.LEFT;
-                            arroKeyPressed = true;
+                            actionKey = true;
                             break;
                         case ConsoleKey.RightArrow:
                             direction = Direction.RIGHT;
-                            arroKeyPressed = true;
+                            actionKey = true;
+                            break;
+                        case ConsoleKey.Spacebar:
+                            direction = Direction.STAY;
+                            actionKey = true;
                             break;
                         case ConsoleKey.Escape:
                           //  _controller.Quit();

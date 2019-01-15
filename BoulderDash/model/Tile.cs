@@ -18,6 +18,7 @@ namespace BoulderDash.model
         public abstract bool CanBeMovedOn();
 
         public virtual void Action(){}
+        public virtual void Crush(){}
 
         public abstract void DestroyGameObject();
         public abstract void CheckSurroundings();

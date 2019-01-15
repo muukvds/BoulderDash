@@ -46,19 +46,14 @@ namespace BoulderDash.controller
             _Model.Player = player;
         }
 
-        //public void AddWorker(Worker worker)
-        //{
-        //    _Model.AddWorker(worker);
-        //}
-
         public void MovePlayer(Direction direction)
         {
             _Model.MovePlayer(direction);
         }
 
-        public void EindGame(int steps)
+        public void EindGame(int score,int timeLeft)
         {
-            _View.EindGame(steps);
+            _View.EindGame(score, timeLeft);
         }
 
         public void LostGame()
